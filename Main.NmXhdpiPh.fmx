@@ -1,0 +1,18 @@
+inherited MainForm_NmXhdpiPh: TMainForm_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited panelBottom: TPanel
+    Position.Y = 527.000000000000000000
+    Size.Width = 400.000000000000000000
+  end
+  inherited MenuBar1: TMenuBar
+    Size.Width = 400.000000000000000000
+  end
+  inherited Panel1: TPanel
+    Size.Width = 400.000000000000000000
+  end
+  inherited PanelGould: TPanel
+    Size.Width = 400.000000000000000000
+  end
+end

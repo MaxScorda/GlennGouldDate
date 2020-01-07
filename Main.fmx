@@ -1,0 +1,192 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 601
+  ClientWidth = 370
+  Fill.Kind = Gradient
+  Fill.Gradient.Points = <
+    item
+      Color = xFFA3A6BC
+      Offset = 0.000000000000000000
+    end
+    item
+      Color = xFFB6E1FF
+      Offset = 1.000000000000000000
+    end>
+  Fill.Gradient.Style = Radial
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object panelBottom: TPanel
+    StyleName = 'stName1'
+    Align = MostBottom
+    Position.Y = 513.000000000000000000
+    Size.Width = 370.000000000000000000
+    Size.Height = 88.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btCalc: TButton
+      Align = Center
+      Size.Width = 145.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Calcola giorni'
+      OnClick = btCalcClick
+    end
+  end
+  object MenuBar1: TMenuBar
+    Align = MostTop
+    Size.Width = 370.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object MenuItem1: TMenuItem
+      StyleLookup = 'menuitemstyle'
+      Text = 'Esci'
+      OnClick = MenuItem1Click
+    end
+  end
+  object Panel1: TPanel
+    Align = Top
+    Margins.Top = 2.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Position.Y = 43.000000000000000000
+    Size.Width = 370.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object deCompleanno: TDateEdit
+      Date = 43802.000000000000000000
+      OnChange = deCompleannoChange
+      Position.X = 176.000000000000000000
+      Position.Y = 43.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Data Inizio'
+    end
+    object deOggi: TDateEdit
+      Date = 43833.000000000000000000
+      TodayDefault = True
+      OnChange = deOggiChange
+      Position.X = 176.000000000000000000
+      Position.Y = 11.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Data Destinazione'
+    end
+  end
+  object PanelGould: TPanel
+    StyleName = 'stName1'
+    Align = Top
+    Margins.Top = 2.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 370.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object lbGiornoNascita: TLabel
+      Align = Horizontal
+      AutoSize = True
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Leading
+      TextSettings.Trimming = Word
+      Text = 'Glenn Gould e'#39' nato il 25-09-1932 '
+    end
+    object lbGiornoMorte: TLabel
+      Align = Horizontal
+      AutoSize = True
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Leading
+      TextSettings.Trimming = Word
+      Text = 'ed '#232' scomparso il 04-10-1982'
+    end
+    object lbGiorniVissuti: TLabel
+      Align = Horizontal
+      AutoSize = True
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 119.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Leading
+      TextSettings.Trimming = Word
+      Text = #232' vissuto quindi'
+    end
+  end
+  object StyleBook1: TStyleBook
+    Left = 320
+    Top = 8
+    ResourcesBin = {
+      464D585F5354594C4520322E3501120000000003EE0000545046300A54526563
+      74616E676C65000A46696C6C2E436F6C6F72070D636C615768697465736D6F6B
+      650748697454657374080A506F736974696F6E2E580500000000000080C50740
+      0A506F736974696F6E2E5905000000000000008907400A53697A652E57696474
+      680500000000000000B907400B53697A652E4865696768740500000000000000
+      F806401453697A652E506C6174666F726D44656661756C7408105374726F6B65
+      2E546869636B6E6573730500000000000000C000400A5374726F6B652E436170
+      0705526F756E640B5374726F6B652E4A6F696E0705526F756E64075669736962
+      6C65080000}
+  end
+  object Panel2: TPanel
+    Align = Bottom
+    Margins.Top = 1.000000000000000000
+    Margins.Bottom = 1.000000000000000000
+    Position.Y = 415.000000000000000000
+    Size.Width = 370.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object Label3: TLabel
+      Align = Horizontal
+      Position.Y = 20.000000000000000000
+      Size.Width = 370.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Da data scelta a data destinata'
+    end
+    object lbGiorni: TLabel
+      Align = Horizontal
+      Position.Y = 56.000000000000000000
+      Size.Width = 370.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+    end
+  end
+end

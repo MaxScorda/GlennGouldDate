@@ -1,0 +1,26 @@
+# Folders #
+**/__history/*
+**/log/*
+**/log/*
+**/intermediate
+# files #
+**/*.obj
+**/*.pch
+**/*.tds
+**/*.il?
+**/*.local
+**Android/
+**/Win32/*
+**/Win64/*
+*.#00
+*.#01
+*.#02
+*.#03
+*.zip
+*.obj
+*.bak
+
+# per configurazioni standalone o in cartella progetto #
+**/documenti/*
+filenuovopc/*
+salvataggi/*
