@@ -14,5 +14,24 @@ inherited MainForm_SmXhdpiPh: TMainForm_SmXhdpiPh
   end
   inherited PanelGould: TPanel
     Size.Width = 250.000000000000000000
+    inherited lbGiornoNascita: TLabel
+      Size.Width = 240.000000000000000000
+    end
+    inherited lbGiornoMorte: TLabel
+      Size.Width = 240.000000000000000000
+    end
+    inherited lbGiorniVissuti: TLabel
+      Size.Width = 240.000000000000000000
+    end
+  end
+  inherited Panel2: TPanel
+    Position.Y = 189.000000000000000000
+    Size.Width = 250.000000000000000000
+    inherited Label3: TLabel
+      Size.Width = 250.000000000000000000
+    end
+    inherited lbGiorni: TLabel
+      Size.Width = 250.000000000000000000
+    end
   end
 end

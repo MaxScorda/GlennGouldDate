@@ -104,11 +104,13 @@ void __fastcall TMainForm::FormCreate(TObject *Sender) {
 // ---------------------------------------------------------------------------
 void __fastcall TMainForm::btCalcClick(TObject *Sender) {
     AnsiString DataDa, DataA;
+    int calcolo;
     Label3->Visible = true;
-    DataDa = DateToStr(deCompleanno->Date);
-    DataA = DateToStr(deOggi->Date);
-    lbGiorni->Text = String(abs(calcolagiorni(StrToInt(DataA.SubString(0, 2)), StrToInt(DataA.SubString(3, 2)), StrToInt(DataA.SubString(6, 4))) - calcolagiorni(StrToInt(DataDa.SubString(0, 2)), StrToInt(DataDa.SubString(3, 2)), StrToInt(DataDa.SubString(5, 4))))) + " giorni";
 
+    DataDa = FormatDateTime("dd/mm/yyyy", deCompleanno->Date);
+    DataA = FormatDateTime("dd/mm/yyyy", deOggi->Date);
+    calcolo = abs(calcolagiorni(StrToInt(DataA.SubString(1, 2)), StrToInt(DataA.SubString(4, 2)), StrToInt(DataA.SubString(7, 4))) - calcolagiorni(StrToInt(DataDa.SubString(1, 2)), StrToInt(DataDa.SubString(4, 2)), StrToInt(DataDa.SubString(7, 4))));
+    lbGiorni->Text = IntToStr(calcolo) + " giorni";
 }
 
 // ---------------------------------------------------------------------------
@@ -117,11 +119,11 @@ void __fastcall TMainForm::deOggiChange(TObject * Sender)
     Label3->Visible = false;
     lbGiorni->Text = "";
 }
+
 // ---------------------------------------------------------------------------
 void __fastcall TMainForm::deCompleannoChange(TObject *Sender)
 {
-     Label3->Visible = false;
+    Label3->Visible = false;
     lbGiorni->Text = "";
 }
-//---------------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------

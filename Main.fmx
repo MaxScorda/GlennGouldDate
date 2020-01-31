@@ -79,7 +79,7 @@ object MainForm: TMainForm
       Text = 'Data Inizio'
     end
     object deOggi: TDateEdit
-      Date = 43833.000000000000000000
+      Date = 43854.000000000000000000
       TodayDefault = True
       OnChange = deOggiChange
       Position.X = 176.000000000000000000
